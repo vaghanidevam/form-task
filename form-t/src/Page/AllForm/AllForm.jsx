@@ -78,11 +78,11 @@ export default function AllForm() {
         <Box
           sx={{
             width: '98%',
-            height: { xs: '0.5px', md: '0.5px' },          // thickness of the line
+            height: { xs: '0.5px', md: '0.5px' },          
             backgroundColor: 'black',
             mt: { xs: 1, md: 1 },
-            mb: 1,                  // vertical margin (optional)
-            borderRadius: 1,        // optional for soft edges
+            mb: 1,                  
+            borderRadius: 1,        
           }}
         />
 

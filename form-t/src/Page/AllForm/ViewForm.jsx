@@ -67,17 +67,11 @@ function ViewForm() {
 
 
 
-
-
-    const columnPattern = Pattern[form.patternNumber || 0 ];
-   console.log("Column Pattern:",form.patternNumber) 
+    const columnPattern = Pattern[form.patternNumber || 0];
+    console.log("Column Pattern:", form.patternNumber)
 
     console.log(columnPattern)
 
-
-
-
-    // Placeholder field renderer
     const renderField = (field, index) => {
         const commonGridProps = {
             key: index,
@@ -276,14 +270,14 @@ function ViewForm() {
                 }}
             >
                 <ThemeProvider theme={theme}>
-                    <Box sx={{ mt:{xs:2, md:1} }}>
+                    <Box sx={{ mt: { xs: 2, md: 1 } }}>
                         <Typography
                             variant="h4"
                             sx={{
                                 color: 'black',
                                 fontSize: {
-                                    xs: '1.3rem', 
-                                    sm: '2rem',   
+                                    xs: '1.3rem',
+                                    sm: '2rem',
                                 }
                             }}
                         >

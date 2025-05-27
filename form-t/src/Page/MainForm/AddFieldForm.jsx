@@ -385,8 +385,8 @@ function AddFieldFormat({ setDeleteButtonOn, count, setOpenDropdown, setFormFiel
                                             whiteSpace: "normal",
                                         }}
                                     >
-                                        <FormGroup sx={{ display: "flex", flexDirection: "column", gap: 1, flexWrap: "wrap",  }}>
-                                            <InputLabel sx={{color:'black'}}>{fieldConfig.label}</InputLabel>
+                                        <FormGroup sx={{ display: "flex", flexDirection: "column", gap: 1, flexWrap: "wrap", }}>
+                                            <InputLabel sx={{ color: 'black' }}>{fieldConfig.label}</InputLabel>
                                             {fieldConfig.option?.map((opt, i) => (
                                                 <FormControlLabel
                                                     key={i}

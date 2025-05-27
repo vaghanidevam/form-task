@@ -225,7 +225,6 @@ function MainForm() {
                         p: 2,
                     }}
                 >
-                    {/* Form Preview Section */}
                     <PreviewForm
                         FormFields={FormFields}
                         setDeleteButtonOn={setDeleteButtonOn}
@@ -237,7 +236,6 @@ function MainForm() {
                         setFormFields={setFormFields}
                     />
 
-                    {/* Create Button Section */}
                     {FormFields.length > 0 && (
                         <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: 2 }}>
                             <Button variant="contained" color="primary" onClick={handleCreateForm}>

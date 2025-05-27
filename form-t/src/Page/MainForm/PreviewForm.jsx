@@ -98,7 +98,7 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
                   position: 'absolute',
                   top: 8,
                   right: 8,
-                  zIndex: 1, // ensure it's on top
+                  zIndex: 1,
                 }}
               >
 
@@ -108,7 +108,7 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
                 <IconButton
                   size="small"
                   onClick={() => handleDelete(index)}
-                  disabled={!deleteButtonOn} // Disable if deleteButtonOn is false or undefined
+                  disabled={!deleteButtonOn}
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
@@ -152,7 +152,7 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
                 <IconButton
                   size="small"
                   onClick={() => handleDelete(index)}
-                  disabled={!deleteButtonOn} // Disable if deleteButtonOn is false or undefined
+                  disabled={!deleteButtonOn}
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
@@ -198,7 +198,7 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
                 <IconButton
                   size="small"
                   onClick={() => handleDelete(index)}
-                  disabled={!deleteButtonOn} // Disable if deleteButtonOn is false or undefined
+                  disabled={!deleteButtonOn}
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
@@ -246,7 +246,7 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
                 <IconButton
                   size="small"
                   onClick={() => handleDelete(index)}
-                  disabled={!deleteButtonOn} // Disable if deleteButtonOn is false or undefined
+                  disabled={!deleteButtonOn}
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
@@ -299,7 +299,7 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
                 <IconButton
                   size="small"
                   onClick={() => handleDelete(index)}
-                  disabled={!deleteButtonOn} // Disable if deleteButtonOn is false or undefined
+                  disabled={!deleteButtonOn}
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
@@ -353,20 +353,20 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
                 <IconButton
                   size="small"
                   onClick={() => handleDelete(index)}
-                  disabled={!deleteButtonOn} // Disable if deleteButtonOn is false or undefined
+                  disabled={!deleteButtonOn}
                 >
                   <DeleteIcon fontSize="small" />
                 </IconButton>
               </Box>
 
-             
+
               <FormLabel component="legend">{field.label}</FormLabel>
-          
+
               <RadioGroup
                 row
-         
+
                 disabled={field.disabled}
-               
+
               >
                 {field.option.map((option, i) => (
                   <FormControlLabel
@@ -423,24 +423,24 @@ function PreviewForm({ FormFields, formName, setPatternNumber, setFormFields, se
               <MenuItem disabled value="">
                 <em>Select a pattern</em>
               </MenuItem>
-                <MenuItem key={0} value={0}>
-                  standardRepeat
-                </MenuItem>
-                <MenuItem key={1} value={1}>
-                  splitGroup
-                </MenuItem>
-                <MenuItem key={2} value={2}>
-                  allFullWidth
-                </MenuItem>
-                <MenuItem key={3} value={3}>
-                  groupedSixesWithEnds
-                </MenuItem>
-                <MenuItem key={4} value={4}>
-                  stackedShortToFull
-                </MenuItem>
-                <MenuItem key={5} value={5}>
-                  alternateFlow
-                </MenuItem>
+              <MenuItem key={0} value={0}>
+                standardRepeat
+              </MenuItem>
+              <MenuItem key={1} value={1}>
+                splitGroup
+              </MenuItem>
+              <MenuItem key={2} value={2}>
+                allFullWidth
+              </MenuItem>
+              <MenuItem key={3} value={3}>
+                groupedSixesWithEnds
+              </MenuItem>
+              <MenuItem key={4} value={4}>
+                stackedShortToFull
+              </MenuItem>
+              <MenuItem key={5} value={5}>
+                alternateFlow
+              </MenuItem>
             </Select>
           </FormControl>
         </Box>
