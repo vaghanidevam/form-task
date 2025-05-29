@@ -7,7 +7,7 @@ exports.createForm = async (req, res) => {
     console.log("this is controller code");
 
     const { formData } = req.body;
-//  console.log(formData)
+ console.log(formData)
     if (!formData || !formData.FormFields || !formData.formName) {
       return res.status(400).json({
         success: false,
